@@ -14,7 +14,6 @@ import ViewBookDetails from "./components/ViewBookDetails/ViewBookDetails";
 import Favourites from "./components/Profile/Favourites";
 import UserOrderHistory from "./components/Profile/UserOrderHistory";
 import Settings from "./components/Profile/Settings";
-import AboutUs from "./pages/AboutUs.jsx";
 
 import Layout from "./components/Layout/Layout";
 import "./App.css";
@@ -43,14 +42,7 @@ const App = () => {
           </Layout>
         }
       />
-      <Route
-        path="/about-us"
-        element={
-          <Layout>
-            <AboutUs />
-          </Layout>
-        }
-      />
+
       <Route
         path="/all-books"
         element={
