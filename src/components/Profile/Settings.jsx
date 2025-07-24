@@ -31,7 +31,7 @@ const UserSettings = () => {
       >
         {/* Name */}
         <div>
-          <label className="block mb-2 font-semibold flex items-center gap-2">
+          <label className="mb-2 font-semibold flex items-center gap-2">
             <FaUser className="text-blue-400" /> Name
           </label>
           <input
@@ -45,7 +45,7 @@ const UserSettings = () => {
 
         {/* Email */}
         <div>
-          <label className="block mb-2 font-semibold flex items-center gap-2">
+          <label className="mb-2 font-semibold flex items-center gap-2">
             <FaEnvelope className="text-blue-400" /> Email
           </label>
           <input
@@ -59,7 +59,7 @@ const UserSettings = () => {
 
         {/* Theme */}
         <div>
-          <label className="block mb-2 font-semibold flex items-center gap-2">
+          <label className=" mb-2 font-semibold flex items-center gap-2">
             <FaPalette className="text-blue-400" /> Theme
           </label>
           <select
