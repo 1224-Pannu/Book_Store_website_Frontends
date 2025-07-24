@@ -19,7 +19,9 @@ const ViewBookDetails = () => {
   useEffect(() => {
     const fetchBook = async () => {
       try {
-        const res = await axios.get(`http://localhost:1000/api/v1/${id}`);
+        const res = await axios.get(
+          `https://book-store-website-tq7n.onrender.com/api/v1/${id}`
+        );
         setBook(res.data.book);
       } catch (err) {
         console.error("❌ Error fetching book:", err);
@@ -32,7 +34,7 @@ const ViewBookDetails = () => {
     if (window.confirm("Are you sure you want to delete this book?")) {
       try {
         const res = await axios.delete(
-          `http://localhost:1000/api/v1/delete-book`,
+          `https://book-store-website-tq7n.onrender.com/api/v1/delete-book`,
           {
             headers: {
               bookid: book._id,
@@ -55,7 +57,7 @@ const ViewBookDetails = () => {
   const handleAddToFavourites = async () => {
     try {
       const response = await axios.put(
-        "http://localhost:1000/api/v1/add-book-to-favourite",
+        "https://book-store-website-tq7n.onrender.com/api/v1/add-book-to-favourite",
         {
           bookid: book._id,
           id: userId,
@@ -77,7 +79,7 @@ const ViewBookDetails = () => {
   const handleAddToCart = async () => {
     try {
       const response = await axios.put(
-        "http://localhost:1000/api/v1/add-to-cart",
+        "https://book-store-website-tq7n.onrender.com/api/v1/add-to-cart",
         null,
         {
           headers: {

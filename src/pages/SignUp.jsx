@@ -24,7 +24,7 @@ const Signup = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:1000/api/v1/sign-up",
+        "https://book-store-website-tq7n.onrender.com/api/v1/sign-up",
         form
       );
       setMessage(response.data.message);

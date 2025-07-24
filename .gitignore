@@ -15,11 +15,6 @@ out/
 .temp/
 *.local
 
-# Env and config
-.env
-.env.*
-config.js
-
 # Logs
 logs/
 *.log

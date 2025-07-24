@@ -9,7 +9,9 @@ const AllBooks = () => {
   useEffect(() => {
     const fetchAllBooks = async () => {
       try {
-        const response = await axios.get("http://localhost:1000/api/v1/all");
+        const response = await axios.get(
+          "https://book-store-website-tq7n.onrender.com/api/v1/all"
+        );
         console.log("✅ All books response:", response.data);
         if (response.data && Array.isArray(response.data.books)) {
           setBooks(response.data.books);

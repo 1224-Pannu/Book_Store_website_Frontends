@@ -9,7 +9,9 @@ const RecentlyAdded = () => {
   useEffect(() => {
     const fetchBooks = async () => {
       try {
-        const response = await axios.get("http://localhost:1000/api/v1/recent");
+        const response = await axios.get(
+          "https://book-store-website-tq7n.onrender.com/api/v1/recent"
+        );
         console.log("✅ Response from backend:", response.data);
         if (response.data && Array.isArray(response.data.books)) {
           setData(response.data.books);

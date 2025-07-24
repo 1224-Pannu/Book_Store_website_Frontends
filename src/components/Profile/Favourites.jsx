@@ -13,7 +13,7 @@ const Favourites = () => {
   const fetchFavourites = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:1000/api/v1/get-favourite-books",
+        "https://book-store-website-tq7n.onrender.com/api/v1/get-favourite-books",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -31,7 +31,7 @@ const Favourites = () => {
   const handleRemove = async (bookId) => {
     try {
       const res = await axios.put(
-        "http://localhost:1000/api/v1/remove-book-from-favourite",
+        "https://book-store-website-tq7n.onrender.com/api/v1/remove-book-from-favourite",
         null,
         {
           headers: {

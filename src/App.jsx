@@ -14,7 +14,7 @@ import ViewBookDetails from "./components/ViewBookDetails/ViewBookDetails";
 import Favourites from "./components/Profile/Favourites";
 import UserOrderHistory from "./components/Profile/UserOrderHistory";
 import Settings from "./components/Profile/Settings";
-import AboutUs from "./pages/AboutUs";
+import AboutUs from "./pages/AboutUs.jsx";
 
 import Layout from "./components/Layout/Layout";
 import "./App.css";
